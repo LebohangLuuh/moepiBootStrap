@@ -1,0 +1,488 @@
+
+.navbar .nav-item .active {
+    color: #575757; 
+    border: #D7DF21;
+    border-width: 2px;
+    border-radius: 25px;
+    border-style: solid;
+  }
+
+  .navbar .nav-item .nav-link {
+    color: #575757; 
+ 
+  }
+
+  .navbar .nav-item .nav-link:hover {
+    color: #D7DF21; 
+ 
+  }
+
+  .background-image {
+    background-image: url('images/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 170px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+  /*  */
+  .card-content {
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    display: none;
+  }
+  
+  .card-content.is-flipped .card-front {
+    transform: rotateY(180deg);
+    display: none;
+  }
+  
+  .card-content.is-flipped .card-back {
+    transform: rotateY(0deg);
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    .card-content {
+      perspective: inherit;
+    }
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card-front {
+      transform: rotateY(0deg);
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      display: none; /* hide back side by default */
+    }
+    .card-content.is-flipped .card-front {
+      transform: rotateY(180deg);
+    }
+    .card-content.is-flipped .card-back {
+      transform: rotateY(0deg);
+      display: block; /* show back side when flipped */
+    }
+    
+  .navbar .nav-item .nav-link {
+    text-align: center;
+ 
+  }
+
+   .display-3 {
+    font-size: 50px;
+    }
+
+    .display-2{
+    font-size: 50px;
+  }
+
+  .numbers .rect h1 {
+    font-size: 1rem;
+  }
+}
+  
+  /*  */
+  .Btn_Weather {
+    border: #0f4c5c;
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 25%;
+  }
+  .btn .btn-primary :hover {
+    background-color: #D7DF21;
+  }
+  
+  .slogan h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide-in 1.5s ease-in forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.glow-card {
+  background-color: #0f4c5c;
+  border-color: #D7DF21;
+  border-width: 2px;
+  animation: blink 1s infinite alternate, storm 1s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 10px 5px transparent;
+  }
+  100% {
+    box-shadow: 0 0 10px 5px #D7DF21;
+  }
+}
+
+@keyframes storm {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px); 
+  }
+}
+
+
+/* mouse hover */
+.animated-element {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #0f4c5c;
+  border-radius: 50%;
+  pointer-events: none; 
+  animation: scaleUp 0.3s ease infinite;
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(0);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.flip-span {
+  color: lime; 
+  font-size: 18px; 
+  background-color: #0f4c5c;
+}
+
+.card-content::before,
+.card-content::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  background: linear-gradient(45deg , #D7DF21, lime, #0f4c5c, lime, #D7DF21);
+  z-index: -1;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  25% {
+background-repeat: 0 0; 
+  }
+  50% {
+    border-color: 400% 0; 
+  }
+  100% {
+    border-color: 0 0; 
+  }
+}
+
+.card-content::after {
+  filter:  blur(15px);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to the row on hover */
+.clickable-row:hover {
+  animation: pulse 1s infinite;
+  cursor: pointer;
+}
+
+.clickable-CT-row:hover {
+  cursor: pointer;
+}
+
+
+/*  */
+.card .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.card:hover .overlay-text {
+  display: flex;
+}
+
+.hidden-text {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .hidden-text {
+  opacity: 1;
+}
+
+
+@keyframes flip-forward {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-90deg);
+  }
+}
+
+@keyframes flip-backward {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(90deg);
+  }
+}
+
+.page-flip-forward {
+  animation: flip-forward 0.6s ease both;
+}
+
+.page-flip-backward {
+  animation: flip-backward 0.6s ease both;
+}
+
+/*percentage counting feature */
+
+header h1 {
+	font-size: 60px;
+}
+
+.counters .container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 40px;
+	text-align: center;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+.clock-container {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		padding-bottom: 20px;
+	}
+}
+@media (max-width: 768px) {
+  #clockLogo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #clockLog {
+    display: none;
+  }
+}
+
+
+/* footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #575757;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+
+  opacity: 1;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #fff url(wave1.png);
+  background-size: 1000px 100px;
+
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 3s linear infinite;
+}
+
+
+@keyframes animatewave {
+  0% {
+      background-position-x: 0px;
+  }
+
+  100% {
+      background-position-x: 1000px;
+  }
+
+}
+
+
+.zoom li a {
+  transition: 1s;
+}
+
+.zoom li a:hover {
+  transform: scale(1.1);
+}
+
+/* gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
