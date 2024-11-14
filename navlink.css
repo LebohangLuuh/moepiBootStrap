@@ -476,7 +476,23 @@ footer .wave#wave1 {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 768px) {
+  .hide-on-small {
+      display: none;
+  }
+}
+/* .card-body {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* Styles for small screens */
+@media (max-width: 576px) {
+  .card-body.Dev {
+      flex-direction: column-reverse;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
