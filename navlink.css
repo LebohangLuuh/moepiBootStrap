@@ -29,65 +29,6 @@ body {
   overflow-x: hidden;
 }
 
-
-  /*  */
-  .card-content {
-    position: relative;
-    perspective: 1000px;
-  }
-  
-  .card-front,
-  .card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: transform 0.5s;
-    backface-visibility: hidden;
-  }
-  
-  .card-back {
-    transform: rotateY(180deg);
-    display: none;
-  }
-  
-  .card-content.is-flipped .card-front {
-    transform: rotateY(180deg);
-    display: none;
-  }
-  
-  .card-content.is-flipped .card-back {
-    transform: rotateY(0deg);
-    display: block;
-  }
-
-  @media (max-width: 767px) {
-    .card-content {
-      perspective: inherit;
-    }
-    .card-front,
-    .card-back {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: transform 0.5s;
-    }
-
-    .card-front {
-      transform: rotateY(0deg);
-    }
-
-    .card-back {
-      transform: rotateY(180deg);
-      display: none; /* hide back side by default */
-    }
-    .card-content.is-flipped .card-front {
-      transform: rotateY(180deg);
-    }
-    .card-content.is-flipped .card-back {
-      transform: rotateY(0deg);
-      display: block; /* show back side when flipped */
-    }
     
   .navbar .nav-item .nav-link {
     text-align: center;
@@ -105,24 +46,7 @@ body {
   .numbers .rect h1 {
     font-size: 1rem;
   }
-}
   
-  /*  */
-  .Btn_Weather {
-    border: #0f4c5c;
-    border-style: solid;
-    border-width: 2.5px;
-    border-radius: 25%;
-  }
-  .btn .btn-primary :hover {
-    background-color: #D7DF21;
-  }
-  
-  .slogan h2 {
-    overflow: hidden;
-    white-space: nowrap;
-    animation: slide-in 1.5s ease-in forwards;
-  }
 
   @keyframes slide-in {
     0% {
@@ -181,24 +105,6 @@ body {
   }
 }
 
-.flip-span {
-  color: lime; 
-  font-size: 18px; 
-  background-color: #0f4c5c;
-}
-
-.card-content::before,
-.card-content::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: calc(100% + 5px);
-  height: calc(100% + 5px);
-  background: linear-gradient(45deg , #D7DF21, lime, #0f4c5c, lime, #D7DF21);
-  z-index: -1;
-  animation: animate 2s linear infinite;
-}
 
 @keyframes animate {
   25% {
@@ -341,100 +247,6 @@ header h1 {
 }
 
 
-/* footer */
-
-footer {
-  position: relative;
-  width: 100%;
-  background: #575757;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-footer .social_icon,
-footer .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-footer .social_icon li,
-footer .menu li {
-  list-style: none;}
-
-footer .social_icon li a {
-  font-size: 2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-footer .social_icon li a {
-  transform: translateY(-10px);
-}
-
-footer .menu li a {
-  font-size: 1.2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  text-decoration: none;
-  opacity: 0.75;
-}
-
-footer .menu li a:hover {
-
-  opacity: 1;
-}
-
-footer p {
-  color: #fff;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-}
-
-
-footer .wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: #fff url(wave1.png);
-  background-size: 1000px 100px;
-
-}
-
-footer .wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animatewave 3s linear infinite;
-}
-
-
-@keyframes animatewave {
-  0% {
-      background-position-x: 0px;
-  }
-
-  100% {
-      background-position-x: 1000px;
-  }
-
-}
-
-
 .zoom li a {
   transition: 1s;
 }
@@ -479,17 +291,6 @@ footer .wave#wave1 {
 @media (max-width: 768px) {
   .hide-on-small {
       display: none;
-  }
-}
-/* .card-body {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* Styles for small screens */
-@media (max-width: 576px) {
-  .card-body.Dev {
-      flex-direction: column-reverse;
   }
 }
 

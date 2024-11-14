@@ -17,183 +17,181 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="navbar-brand" id="clockLog">
-                <a class="navbar-brand" style="color: white; font-size: xx-large; display: flex; align-items: center;"
-                    href="index.html">
-                    <img src="images/moepi.png" style="height: 95px;" class="img-fluid" alt="Responsive image">
-                </a>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="navbar-brand" id="clockLog">
+                    <a class="navbar-brand" style="color: white; font-size: xx-large; display: flex; align-items: center;"
+                        href="index.html">
+                        <img src="images/moepi.png" style="height: 95px;" class="img-fluid" alt="Responsive image">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" style="border-color: transparent;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color: #D7DF21; font-size: 29px; z-index: 100;"></i>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-lg-auto">
+                        <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
+                            <a class="nav-link active" aria-current="page" style="font-size: x-large;"
+                                href="project.html">Applications </a>
+                        </li>
+                        <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
+                            <a class="nav-link " style="font-size: x-large;" href="webs.html">Our Website</a>
+                        </li>
+
+                        <li class="nav-item" style="margin-left: 70px; margin-right: 50px;">
+                            <div class="navbar-brand" id="clockLogo">
+                                <a class="navbar-brand"
+                                    style="color: white; font-size: xx-large; display: flex; align-items: center;"
+                                    href="index.html">
+                                    <div class="d-inline col-12 clock-container" style=" border-radius:25px;">
+                                        <img src="images/moepi.png" style="height: 100px;" class="img-fluid"
+                                            alt="Responsive image">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
+                            <a class="nav-link " style="font-size: x-large;" href="tech.html">Technologies</a>
+                        </li>
+                        <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
+                            <a class="nav-link" style="font-size: x-large;" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid"
+            style="display: flex; justify-content: center; align-items: center; height: 200px; background-image: url('images/about.jpg'); background-size: cover; background-repeat: no-repeat;">
+            <h1 class="display-1 text-center" style="color: #D7DF21; font-weight: 300;">Applications</h1>
+        </div>
 
-            <button class="navbar-toggler" style="border-color: transparent;" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars" style="color: #D7DF21; font-size: 29px; z-index: 100;"></i>
-                </span>
-            </button>
+        <!--  -->
+        <div class="container">
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav m-lg-auto">
-                    <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
-                        <a class="nav-link active" aria-current="page" style="font-size: x-large;"
-                            href="project.html">Applications </a>
-                    </li>
-                    <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
-                        <a class="nav-link " style="font-size: x-large;" href="webs.html">Our Website</a>
-                    </li>
+            <div class="row justify-content-md-center  mt-5">
+                <div class="col-sm-3">
+                    <div class="card" style="border-color: transparent;">
+                        <a href="https://play.google.com/store/apps/details?id=com.LentsweBible.android.aab" target="_blank"
+                            class="card-link">
+                            <img class="card-img-top" src="images/bible.png" alt="playing pool" loading="lazy"
+                                style="height: 250px;"></a>
+                        <div class="overlay-text">
+                            <h1 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
+                                Lentswe bible mobile app</h1>
+                            <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">Successfully
+                                developed <a
+                                    href="https://play.google.com/store/apps/details?id=com.LentsweBible.android.aab"
+                                    target="_blank" class="stretched-link">BIBLE</a> application that contains all South African languages
 
-                    <li class="nav-item" style="margin-left: 70px; margin-right: 50px;">
-                        <div class="navbar-brand" id="clockLogo">
-                            <a class="navbar-brand"
-                                style="color: white; font-size: xx-large; display: flex; align-items: center;"
-                                href="index.html">
-                                <div class="d-inline col-12 clock-container" style=" border-radius:25px;">
-                                    <img src="images/moepi.png" style="height: 100px;" class="img-fluid"
-                                        alt="Responsive image">
-                                </div>
-                            </a>
+
+                            </h4>
                         </div>
-                    </li>
-
-                    <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
-                        <a class="nav-link " style="font-size: x-large;" href="tech.html">Technologies</a>
-                    </li>
-                    <li class="nav-item" style="margin-top: 25px; margin-right: 25px;">
-                        <a class="nav-link" style="font-size: x-large;" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
 
-    <div class="container-fluid"
-        style="display: flex; justify-content: center; align-items: center; height: 200px; background-image: url('images/about.jpg'); background-size: cover; background-repeat: no-repeat;">
-        <h1 class="display-1 text-center" style="color: #D7DF21; font-weight: 300;">Applications</h1>
-    </div>
+            <div class="row justify-content-md-center  mt-5">
+                <div class="col-sm-3">
+                    <div class="card" style="border-color: transparent;">
+                        <a href="https://tekete.co.za/" target="_blank">
+                            <img class="card-img-top" src="images/tikete.png" alt="playing pool" loading="lazy"
+                                style="height: 250px;"></a>
+                        <div class="overlay-text">
+                            <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
+                                Tekete Management System</h2>
+                            <h4 class="text-white text-left" style="font-size: large; font-weight: 300;"> <a
+                                    href="https://tekete.co.za/ " target="_blank"
+                                    class="stretched-link"> Tekete Management System </a>  involves working towards restoring regular operations or resolving a specific type of inquiry.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="border-color: transparent;">
+                        <a href="https://lebohangluuh.github.io/flaka_exclusive" target="_blank">
+                            <img class="card-img-top" src="images/clinic.jpg" alt="playing pool" loading="lazy"
+                                style="height: 250px;"></a>
+                        <div class="overlay-text">
+                            <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
+                                Tsakane-Charlott Clinic File Mnagement System </h2>
+                            <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that will reduce the time that patients wait for retrieval of their files. System used essentially for the immediate and continuing care of patients.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!--  -->
-    <div class="container">
+            <br>
 
-        <div class="row justify-content-md-center  mt-5">
-            <div class="col-sm-3">
-                <div class="card" style="border-color: transparent;">
-                    <a href="https://play.google.com/store/apps/details?id=com.LentsweBible.android.aab" target="_blank"
-                        class="card-link">
-                        <img class="card-img-top" src="images/bible.png" alt="playing pool" loading="lazy"
-                            style="height: 250px;"></a>
-                    <div class="overlay-text">
-                        <h1 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
-                            Lentswe bible mobile app</h1>
-                        <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">Successfully
-                            developed <a
-                                href="https://play.google.com/store/apps/details?id=com.LentsweBible.android.aab"
-                                target="_blank" class="stretched-link">BIBLE</a> application that contains all South African languages
+            <div class="row justify-content-md-center mt-3">
+                <div class="col-sm-3 ">
+                    <div class="card" style="border-color: transparent;">
+                        <a href="https://moepitechnologyinstitute.co.za " target="_blank">
+                            <img class="card-img-top" src="images/QM sys.png" alt="playing pool" loading="lazy"
+                                style="height: 250px;"></a>
+                        <div class="overlay-text">
+                            <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
+                                Queue Management System </h2>
+                            <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that manages queues and generate ticket number for the user. The system will issue out time and date the user arrived, it will eliminate crowd.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card" style="border-color: transparent;">
+                        <a href="https://lebohangluuh.github.io/bomoJ-Website/" target="_blank">
+                            <img class="card-img-top" src="images/fm sys.png" alt="playing pool" loading="lazy"
+                                style="height: 250px;"></a>
+                        <div class="overlay-text">
+                            <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
+                                File Management System </h2>
+                            <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that will enable healthcare organization record, manage and store patient’s information. The hospital administrator interact with the file system to create and delete files and for performing operations on files. The filing system first identify and locate the selected file before performing any operation.</h4>
+                        </div>
+                    </div>
+                </div>
 
 
-                        </h4>
+                <div class="col-sm-3">
+                    <div class="card" style="border-color: transparent;">
+                        <a href="https://xd.adobe.com/view/8e68c0aa-82ea-4593-92f3-1bcfbe70a358-db3b/screen/81667e8c-ce1f-4a94-94f7-f93be938a17c"
+                            target="_blank">
+                            <img class="card-img-top" src="images/leave.png" alt="playing pool" loading="lazy"
+                                style="height: 250px;"></a>
+                        <div class="overlay-text">
+                            <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
+                                Dilifi Management System </h2>
+                            <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that streamlines time off requests for employees. Typically managed by human resources, an automated leave management system makes it easy to track, approve, or deny employee leave requests.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
+    <footer>
+        <div class="card-fluid text-center mt-5" style="background-color: #575757;">
 
-        <div class="row justify-content-md-center  mt-5">
-            <div class="col-sm-3">
-                <div class="card" style="border-color: transparent;">
-                    <a href="https://lebohangluuh.github.io/webCV-Lebohang/" target="_blank">
-                        <img class="card-img-top" src="images/tikete.png" alt="playing pool" loading="lazy"
-                            style="height: 250px;"></a>
-                    <div class="overlay-text">
-                        <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
-                            Tekete Management System</h2>
-                        <h4 class="text-white text-left" style="font-size: large; font-weight: 300;"> <a
-                                href="visit: https://tekete.co.za/ " target="_blank"
-                                class="stretched-link"> Tekete Management System </a>  involves working towards restoring regular operations or resolving a specific type of inquiry.</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card" style="border-color: transparent;">
-                    <a href="https://lebohangluuh.github.io/flaka_exclusive" target="_blank">
-                        <img class="card-img-top" src="images/clinic.jpg" alt="playing pool" loading="lazy"
-                            style="height: 250px;"></a>
-                    <div class="overlay-text">
-                        <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
-                            Tsakane-Charlott Clinic File Mnagement System </h2>
-                        <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that will reduce the time that patients wait for retrieval of their files. System used essentially for the immediate and continuing care of patients.</h4>
-                    </div>
+            <div class="row" style="height: 100px;">
+                <div class="card-footer mt-5" style="color: white;">
+                    Copyright © 2024 Moepi publishing. Website designed & developed by Lebohang Mofokeng
                 </div>
             </div>
         </div>
+    </footer>
 
-        <br>
-
-        <div class="row justify-content-md-center mt-3">
-            <div class="col-sm-3 ">
-                <div class="card" style="border-color: transparent;">
-                    <a href="https://moepitechnologyinstitute.co.za " target="_blank">
-                        <img class="card-img-top" src="images/QM sys.png" alt="playing pool" loading="lazy"
-                            style="height: 250px;"></a>
-                    <div class="overlay-text">
-                        <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
-                            Queue Management System </h2>
-                        <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that manages queues and generate ticket number for the user. The system will issue out time and date the user arrived, it will eliminate crowd.</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="card" style="border-color: transparent;">
-                    <a href="https://lebohangluuh.github.io/bomoJ-Website/" target="_blank">
-                        <img class="card-img-top" src="images/fm sys.png" alt="playing pool" loading="lazy"
-                            style="height: 250px;"></a>
-                    <div class="overlay-text">
-                        <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
-                            File Management System </h2>
-                        <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that will enable healthcare organization record, manage and store patient’s information. The hospital administrator interact with the file system to create and delete files and for performing operations on files. The filing system first identify and locate the selected file before performing any operation.</h4>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-sm-3">
-                <div class="card" style="border-color: transparent;">
-                    <a href="https://xd.adobe.com/view/8e68c0aa-82ea-4593-92f3-1bcfbe70a358-db3b/screen/81667e8c-ce1f-4a94-94f7-f93be938a17c"
-                        target="_blank">
-                        <img class="card-img-top" src="images/leave.png" alt="playing pool" loading="lazy"
-                            style="height: 250px;"></a>
-                    <div class="overlay-text">
-                        <h2 class="display-5 text-center" style="color: #D7DF21; font-weight: 300; font-size: larger;">
-                            Dilifi Management System </h2>
-                        <h4 class="text-white text-left" style="font-size: large; font-weight: 300;">A system that streamlines time off requests for employees. Typically managed by human resources, an automated leave management system makes it easy to track, approve, or deny employee leave requests.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--  -->
-    <div class="card-fluid text-center mt-5" style="background-color: #575757;">
-
-        <div class="row" style="height: 100px;">
-            <div class="card-footer mt-5" style="color: white;">
-                Copyright © 2024 Moepi publishing. Website designed & developed by Lebohang Mofokeng
-            </div>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
