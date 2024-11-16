@@ -57,12 +57,6 @@ body {
     }
 }
 
-.glow-card {
-  background-color: #0f4c5c;
-  border-color: #D7DF21;
-  border-width: 2px;
-  animation: blink 1s infinite alternate, storm 1s infinite linear;
-}
 
 @keyframes blink {
   0% {
@@ -134,15 +128,7 @@ background-repeat: 0 0;
   }
 }
 
-/* Apply animation to the row on hover */
-.clickable-row:hover {
-  animation: pulse 1s infinite;
-  cursor: pointer;
-}
 
-.clickable-CT-row:hover {
-  cursor: pointer;
-}
 
 
 /*  */
@@ -175,32 +161,6 @@ background-repeat: 0 0;
   opacity: 1;
 }
 
-
-@keyframes flip-forward {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(-90deg);
-  }
-}
-
-@keyframes flip-backward {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(90deg);
-  }
-}
-
-.page-flip-forward {
-  animation: flip-forward 0.6s ease both;
-}
-
-.page-flip-backward {
-  animation: flip-backward 0.6s ease both;
-}
 
 /*percentage counting feature */
 
@@ -297,6 +257,12 @@ header h1 {
 @media (min-width: 768px) {
   .nav-item-small-screen {
       display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .row .rev {
+    flex-direction: column-reverse;
   }
 }
 
